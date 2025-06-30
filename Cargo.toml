@@ -1,0 +1,20 @@
+[package]
+name = "solana-http-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.4"
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+solana-sdk = "1.18"
+solana-client = "1.18"
+spl-token = "4.0.0"  # Match what Solana 1.18 uses
+spl-associated-token-account = "2.2"  # Compatible with spl-token 4.0.0
+base58 = "0.2"
+base64 = "0.21"
+ed25519-dalek = "1.0.1"  # Compatible with older zeroize
+rand = "0.8"
+log = "0.4"
+env_logger = "0.10"
